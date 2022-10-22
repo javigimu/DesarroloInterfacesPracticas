@@ -1,0 +1,2 @@
+Scaffold-DbContext 'Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind' -Provider Microsoft.EntityFrameworkCore.SqlServer -DataAnnotations -Tables Categories, Customers, Employees, 'Order Details', Orders, Products, Shippers, Suppliers
+ 

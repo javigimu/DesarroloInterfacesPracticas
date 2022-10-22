@@ -1,0 +1,12 @@
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\bin\Debug\net6.0\Modelos.deps.json
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\bin\Debug\net6.0\Modelos.dll
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\bin\Debug\net6.0\Modelos.pdb
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.csproj.AssemblyReference.cache
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.AssemblyInfoInputs.cache
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.AssemblyInfo.cs
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.csproj.CoreCompileInputs.cache
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.dll
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\refint\Modelos.dll
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.pdb
+C:\DAM\2\Desarrollo de Interfaces\Prácticas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\ref\Modelos.dll

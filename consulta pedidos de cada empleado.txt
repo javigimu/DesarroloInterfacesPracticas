@@ -1,0 +1,2 @@
+select o.EmployeeID, e.FirstName + ' ' + e.LastName as NombreEmpleado, OrderId
+from dbo.Orders as o inner join dbo.Employees as e on o.EmployeeID = e.EmployeeID
