@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Ci2AseIsykNZMuHmXwHpdErfrscU4qhVuMa3pyEa0vyEarbc5r/oPJwatrVDtCdAqlZtZkH3wMjA3yZhRPrAQ==",
+  "dgSpecHash": "8NRSFYEuTYqdcHF+G5G6RiFv9XXVMithrFHzIMx9UxPyyrX3ap9ZftSlpgJCCfwRacolaigCnDPcszv9RHWxfQ==",
   "success": true,
-  "projectFilePath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\DatosEEF\\DatosEEF.csproj",
+  "projectFilePath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\DatosEEF\\DatosEEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Javi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Javi\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

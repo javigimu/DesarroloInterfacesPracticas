@@ -1,0 +1,18 @@
+byte[]? foto = null;
+                if (tbFoto.Text != "")
+                    foto = File.ReadAllBytes(tbFoto.Text);
+
+función
+public Image? byteArrayToImage(byte[]? imagenEnBytes)
+{
+     if (imagenEnBytes != null)
+     {
+      	System.Drawing.ImageConverter converter = new System.Drawing.ImageConverter();
+            Image? img = (Image?)converter.ConvertFrom(imagenEnBytes);
+            return img;
+     }
+     return null;
+}
+
+convertir para mostrar en datagrid
+Image? imagenCategoria = byteArrayToImage(categoria.Picture);

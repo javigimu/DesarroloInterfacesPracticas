@@ -71,7 +71,8 @@ namespace Modelos
             string? title, string? titleOfCourtesy, DateTime? birthDate, 
             DateTime? hireDate, string? address, string? city, string? region, 
             string? postalCode, string? country, string? homePhone, 
-            string? extension, byte[]? photo, string? notes)
+            string? extension, byte[]? photo, string? notes, string? photoPath,
+            int reportsTo)
             :this()
         {
             EmployeeId = employeeId;
@@ -90,12 +91,14 @@ namespace Modelos
             Extension = extension;
             Photo = photo;
             Notes = notes;
+            PhotoPath = photoPath;
+            ReportsTo = reportsTo;
         }        
 
         // Constructor con los parámetros obligatorios
         public Employee(int employeeId, string lastName, string firstName)
             :this(employeeId, lastName, firstName, null, null, null, null, null, null, null,
-                 null, null, null, null, null, null)
+                 null, null, null, null, null, null, null, -1)
         { }
 
         // Constructor de copia

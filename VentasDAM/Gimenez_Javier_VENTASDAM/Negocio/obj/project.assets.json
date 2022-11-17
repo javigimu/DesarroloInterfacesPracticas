@@ -1954,11 +1954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Negocio\\Negocio.csproj",
+      "projectUniqueName": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Negocio\\Negocio.csproj",
       "projectName": "Negocio",
-      "projectPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Negocio\\Negocio.csproj",
+      "projectPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Negocio\\Negocio.csproj",
       "packagesPath": "C:\\Users\\Javi\\.nuget\\packages\\",
-      "outputPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Negocio\\obj\\",
+      "outputPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Negocio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1980,11 +1980,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\DatosEEF\\DatosEEF.csproj": {
-              "projectPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\DatosEEF\\DatosEEF.csproj"
+            "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\DatosEEF\\DatosEEF.csproj": {
+              "projectPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\DatosEEF\\DatosEEF.csproj"
             },
-            "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj": {
-              "projectPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj"
+            "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj": {
+              "projectPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uaNaF7XtYjiNCEgA3uN/KuRvMxXX45pByo2q8DYao3v/hCL2tZ+qdDdmBpHWk9LXAp3b5vQeFIGaMKbevEZ/QA==",
+  "dgSpecHash": "I9gFKS2c/aDscg+39GAwKdUezZJwPr7g0LvU0nAANuymDOMwUhe7qr48wn68GeSpXOLNBQ+ZcRQ1l8F2PGcHSg==",
   "success": true,
-  "projectFilePath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Negocio\\Negocio.csproj",
+  "projectFilePath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Negocio\\Negocio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Javi\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Javi\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

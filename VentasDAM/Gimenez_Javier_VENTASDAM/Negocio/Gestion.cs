@@ -13,8 +13,15 @@ namespace Negocio
         private List<Employee>? Empleados { get; set; }
         private List<Order>? Pedidos { get; set; }
 
+        private Employee? empleadoSeleccionado;
+
         // Flag: Se ha llamado a Dispose?
         bool disposed;
+
+        // propiedades utilizadas en los pedidos
+        public static decimal TotalSinIva { get; set; }
+        public static int IVA { get; set; }        
+        public static decimal TotalPedido => TotalSinIva * (1 + (decimal)IVA / 100);
 
         #region "constructores y metodos basicos"
         public Gestion()
@@ -22,6 +29,8 @@ namespace Negocio
             Empleados = new List<Employee>();
             Pedidos = new List<Order>();
             disposed = false;
+            TotalSinIva = 0;
+            IVA = 21;
         }
 
         // Constructor de copia
@@ -48,6 +57,12 @@ namespace Negocio
             }
 
             disposed = g.disposed;
+        }
+
+        public void ResetearTotales()
+        {
+            TotalSinIva = 0;
+            IVA = 21;
         }
         
         public override string ToString()
@@ -130,6 +145,17 @@ namespace Negocio
             }
         }
 
+        // Insertar Order devolviendo el id generado de forma automática
+        public int InsertarOrderYDevolverId(Order o)
+        {
+            using (OrderADO oAdo = new OrderADO())
+            {
+                o.OrderId = 0;
+                oAdo.Insertar(o);                
+            }
+            return o.OrderId;
+        }
+
         // Actualizar Order
         public void ActualizarOrder(Order o)
         {
@@ -146,6 +172,12 @@ namespace Negocio
             {
                 oAdo.Borrar(o);
             }
+        }
+
+        // Función para calcular los totales de un pedido
+        public void CalcularTotalesPedido(Order o, OrderDetail od)
+        {
+            // TO DO
         }
 
         #endregion
@@ -204,6 +236,12 @@ namespace Negocio
         static public ICollection<Product> ListadoProductos()
         {
             return ProductADO.Listar();
+        }
+
+        // listado de productos de una categoría
+        static public ICollection<Product> ListadoProductosPorCategoria(int categoriaId)
+        {
+            return ProductADO.ListarPorCategoria(categoriaId);
         }
 
         // Obtener un producto
@@ -280,9 +318,29 @@ namespace Negocio
         // Obtener datos de un empleado
         public Employee? ObtenerEmpleado(int employeeId)
         {
-            return EmployeeADO.Listar(employeeId);
+            empleadoSeleccionado = EmployeeADO.Listar(employeeId);
+            return empleadoSeleccionado;
         }
 
+        // Obtener el nombre completo del empleado
+        public string? ObtenerNombreEmpleado(int employeeId)
+        {
+            empleadoSeleccionado = ObtenerEmpleado(employeeId);
+            if (empleadoSeleccionado != null)
+                return empleadoSeleccionado.FirstName + " " + empleadoSeleccionado.LastName;
+            else
+                return null;
+        }
+
+        // Obtener la foto del empleado
+        public byte[]? ObtenerFotoEmpleado(int employeeId)
+        {
+            empleadoSeleccionado = ObtenerEmpleado(employeeId);
+            if (empleadoSeleccionado != null)
+                return empleadoSeleccionado.Photo;
+            else
+                return null;
+        }
 
         // Insertar Empleado
         public void InsertarEmployee(Employee e)
@@ -290,6 +348,8 @@ namespace Negocio
             using (EmployeeADO eAdo = new EmployeeADO())
             {
                 e.EmployeeId = 0;
+                if (e.ReportsTo == -1)
+                    e.ReportsTo = null;
                 eAdo.Insertar(e);
             }
         }

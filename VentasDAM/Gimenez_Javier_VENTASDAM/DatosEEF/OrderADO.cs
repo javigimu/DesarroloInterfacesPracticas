@@ -63,7 +63,7 @@ namespace DatosEEF
             using (var context = new NorthwindContext())
             {
                 context.Entry(dato).State = EntityState.Added;
-                context.SaveChanges();
+                context.SaveChanges();                
             }
         }
 

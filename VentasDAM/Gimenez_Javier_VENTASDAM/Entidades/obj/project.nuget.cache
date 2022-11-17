@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r092zvPztosAzhcnSPtS95RmznOlyvUSVlmmm1e/F7jFOeIJzvjjNNGKxkNYfYBxyfm9RmHOoEO4g91i5ZQMnA==",
+  "dgSpecHash": "L6nfEDA5uao+Nnb56jPIlyPf/l7SwMd7btZir+btA2IsdLko/U847HU7BNOXXXm1vxTN+kDz6TiuZI2MyzLlLg==",
   "success": true,
-  "projectFilePath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj",
+  "projectFilePath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Javi\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\Javi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.10\\microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",

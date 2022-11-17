@@ -42,6 +42,19 @@ namespace DatosEEF
             }
         }
 
+        static public ICollection<Product> ListarPorCategoria(int categoriaId)
+        {
+            using (var context = new NorthwindContext())
+            {
+                var query = from st in context.Products
+                            where st.CategoryId == categoriaId
+                            select st;
+
+                var productos = query.ToList();
+                return productos;
+            }
+        }
+
         public void Insertar(Product dato)
         {
             using (var context = new NorthwindContext())

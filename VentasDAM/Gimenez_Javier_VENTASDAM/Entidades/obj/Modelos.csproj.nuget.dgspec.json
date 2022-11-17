@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj": {}
+    "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj": {}
   },
   "projects": {
-    "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj": {
+    "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj",
+        "projectUniqueName": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj",
         "projectName": "Modelos",
-        "projectPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj",
+        "projectPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\Modelos.csproj",
         "packagesPath": "C:\\Users\\Javi\\.nuget\\packages\\",
-        "outputPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Prácticas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\obj\\",
+        "outputPath": "C:\\DAM\\2\\Desarrollo de Interfaces\\Practicas\\VentasDAM\\Gimenez_Javier_VENTASDAM\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

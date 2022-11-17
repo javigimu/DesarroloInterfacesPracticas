@@ -94,8 +94,8 @@ namespace Modelos
         }
 
         // Constructor con los parámetros obligatorios
-        public Order(int orderId, string customerId, int employeeId, int shipVia)
-            :this (orderId, customerId , employeeId, null, null, null, shipVia, 
+        public Order(int orderId, string customerId, int employeeId)
+            :this (orderId, customerId , employeeId, null, null, null, null, 
                  0, null, null, null,null, null, null)
         { }
         
