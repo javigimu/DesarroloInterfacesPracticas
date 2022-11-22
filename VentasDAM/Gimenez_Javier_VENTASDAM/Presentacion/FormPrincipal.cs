@@ -57,6 +57,11 @@ namespace Presentacion
             }
         }
 
+        /// <summary>
+        /// Convierte un array de bytes en una imagen
+        /// </summary>
+        /// <param name="imagenEnBytes"></param>
+        /// <returns>Imagen convertida</returns>
         public Image? byteArrayToImage(byte[]? imagenEnBytes)
         {
             if (imagenEnBytes != null)
@@ -137,7 +142,7 @@ namespace Presentacion
 
         private void modificarPrecioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            formProductos = new FormProductos();
+            formProductos = new FormProductos(empleadoSeleccionadoId);
             formProductos.Owner = this;
             this.Hide();
             formProductos.ShowDialog();
@@ -157,11 +162,6 @@ namespace Presentacion
             LanzarFormPedido('i');
         }
 
-        private void tsbImprimirFactura_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tsmPedidoNuevo_Click(object sender, EventArgs e)
         {
             LanzarFormPedido('i');
@@ -170,6 +170,37 @@ namespace Presentacion
         private void tsmPedidoModificar_Click(object sender, EventArgs e)
         {
             LanzarFormPedido('m');
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 ab = new AboutBox1();
+            ab.Owner = this;            
+            ab.ShowDialog();
+        }
+
+        private void totalPedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGraficoClientePedido formGraficoClientePedido = new FormGraficoClientePedido();
+            formGraficoClientePedido.Owner = this;
+            this.Hide();
+            formGraficoClientePedido.Show();            
+        }
+
+        private void productosPorCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGraficoProductoCategoria formGraficoProductoCategoria = new FormGraficoProductoCategoria();
+            formGraficoProductoCategoria.Owner = this;
+            this.Hide();
+            formGraficoProductoCategoria.Show();
+        }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormFactura formFactura = new FormFactura();
+            formFactura.Owner = this;
+            this.Hide();
+            formFactura.Show();
         }
     }
 }

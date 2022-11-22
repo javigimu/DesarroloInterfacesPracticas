@@ -1,4 +1,5 @@
-﻿using Modelos;
+﻿using Microsoft.ReportingServices.RdlExpressions.ExpressionHostObjectModel;
+using Modelos;
 using Negocio;
 using System;
 using System.Collections.Generic;
@@ -15,17 +16,23 @@ namespace Presentacion
 { 
     /// <summary>
     /// <autor>Javier Giménez</autor>
+    /// Formulario gestión de productos
     /// </summary>
-
     public partial class FormProductos : Form
     {
         private ICollection<Category>? categorias;
         private ICollection<Product>? productos;
         Product? producto;
+        int empleadoId;
 
         public FormProductos()
         {
             InitializeComponent();
+        }
+
+        public FormProductos(int empleadoId) : this()
+        {
+            this.empleadoId = empleadoId;
         }
 
         private void CargarCategorias(object sender, EventArgs e)
@@ -114,15 +121,32 @@ namespace Presentacion
             {
                 if (producto != null)
                 {
-                    producto.UnitPrice = Convert.ToDecimal(tbPrecio.Text, new CultureInfo("en-US"));
-                    gestion.ActualizarProducto(producto);
-                    Mensaje.MostrarProcesoFinalizadoCorrectamente("Actualizar", "precio");
-                    productos = Gestion.ListadoProductos();
-                    int categoriaId = Convert.ToInt32(dataGridViewCategorias.Rows[dataGridViewCategorias.CurrentRow.Index]
-                        .Cells[0].Value.ToString());
-                    MostrarProductos(categoriaId);
+                    bool empleadoConfirmado = PedirConfirmacionDeEmpleado();
+
+                    if (empleadoConfirmado)
+                    {
+                        producto.UnitPrice = Convert.ToDecimal(tbPrecio.Text, new CultureInfo("en-US"));
+                        gestion.ActualizarProducto(producto);
+                        Mensaje.MostrarProcesoFinalizadoCorrectamente("Actualizar", "precio");
+                        productos = Gestion.ListadoProductos();
+                        int categoriaId = Convert.ToInt32(dataGridViewCategorias.Rows[dataGridViewCategorias.CurrentRow.Index]
+                            .Cells[0].Value.ToString());
+                        MostrarProductos(categoriaId);
+                    }
+                    else
+                    {
+                        Mensaje.MostrarErrorDeValidacion("No se ha validado correctamente, precio no actualizado");
+                    }
                 }
             }
+        }
+
+        private bool PedirConfirmacionDeEmpleado()
+        {
+            FormValidarUsuario formValidarUsuario = new FormValidarUsuario(empleadoId);
+            formValidarUsuario.Owner = this;            
+            formValidarUsuario.ShowDialog();
+            return formValidarUsuario.ValidacionCorrecta;
         }
 
         private void btSalir_Click(object sender, EventArgs e)

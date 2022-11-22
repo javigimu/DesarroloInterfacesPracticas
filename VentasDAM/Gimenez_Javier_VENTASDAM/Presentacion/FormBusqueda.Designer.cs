@@ -56,6 +56,8 @@
             // 
             // dataGridViewBuscar
             // 
+            this.dataGridViewBuscar.AllowUserToAddRows = false;
+            this.dataGridViewBuscar.AllowUserToDeleteRows = false;
             this.dataGridViewBuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBuscar.Location = new System.Drawing.Point(10, 74);
             this.dataGridViewBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -14,6 +14,7 @@ namespace Presentacion
 {
     /// <summary>
     /// <autor>Javier Giménez</autor>
+    /// Formulario de búsqueda de productos
     /// </summary>
     public partial class FormBusquedaProducto : Form
     {
@@ -38,6 +39,9 @@ namespace Presentacion
             CargarTablaProductos();
         }
 
+        /// <summary>
+        /// Creo un DataTable para los productos y sus columnas
+        /// </summary>
         private void CrearTablaProductos()
         {
             productos = Gestion.ListadoProductos();
@@ -66,6 +70,9 @@ namespace Presentacion
             FiltrarProductos();
         }
 
+        /// <summary>
+        /// Filtra los productos por nombre o los muestra todos si no se establece un filtro
+        /// </summary>
         private void FiltrarProductos()
         {
             if (tablaProductos != null)

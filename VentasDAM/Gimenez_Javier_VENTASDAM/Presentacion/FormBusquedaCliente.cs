@@ -14,6 +14,7 @@ namespace Presentacion
 {
     /// <summary>
     /// <autor>Javier Giménez</autor>
+    /// Formulario de búsqueda de clientes
     /// </summary>
     public partial class FormBusquedaCliente : Form
     {
@@ -32,6 +33,10 @@ namespace Presentacion
             return cliente;
         }
 
+        /// <summary>
+        /// Filtra los clientes por nombre de cliente o nombre e empresa
+        /// o los muestra todos si no se establece un filtro
+        /// </summary>
         private void FiltrarCliente()
         {
             if (tablaClientes != null)
@@ -60,6 +65,9 @@ namespace Presentacion
             FiltrarCliente();
         }
 
+        /// <summary>
+        /// Crea un DataTable y sus columnas para mostrar los clientes
+        /// </summary>
         private void CrearColumnasCliente()
         {
             clientes = Gestion.ListadoClientes();
@@ -92,7 +100,7 @@ namespace Presentacion
             FiltrarCliente();
         }
 
-        private void ConfirmarSeleccion(object sender, DataGridViewCellEventArgs e)
+        private void SeleccionarCliente()
         {
             string? customerId = dataGridViewBuscar.Rows[dataGridViewBuscar.CurrentRow.Index]
                 .Cells[0].Value.ToString();
@@ -100,13 +108,16 @@ namespace Presentacion
             using (Gestion gestion = new Gestion())
             {
                 if (customerId != null)
-                    cliente = gestion.ObtenerCustomer(customerId);                
+                    cliente = gestion.ObtenerCustomer(customerId);
             }
+        }
 
+        private void ConfirmarSeleccion(object sender, DataGridViewCellEventArgs e)
+        {
+            SeleccionarCliente();
             Close();
         }
 
-        // closing -> muestra el formulario padre
         private void MostrarFormPadre(object sender, FormClosingEventArgs e)
         {
             Owner.Show();
@@ -114,6 +125,7 @@ namespace Presentacion
 
         private void btSeleccionar_Click(object sender, EventArgs e)
         {
+            SeleccionarCliente();
             Close();
         }
 

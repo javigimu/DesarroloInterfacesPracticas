@@ -75,6 +75,8 @@
             this.btSalir = new System.Windows.Forms.Button();
             this.btAnyadirProducto = new System.Windows.Forms.Button();
             this.btEliminarProducto = new System.Windows.Forms.Button();
+            this.lbTextoPedido = new System.Windows.Forms.Label();
+            this.lbPedidoId = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -83,7 +85,7 @@
             // 
             // tbCliente
             // 
-            this.tbCliente.Location = new System.Drawing.Point(154, 22);
+            this.tbCliente.Location = new System.Drawing.Point(154, 41);
             this.tbCliente.Name = "tbCliente";
             this.tbCliente.ReadOnly = true;
             this.tbCliente.Size = new System.Drawing.Size(290, 23);
@@ -91,7 +93,7 @@
             // 
             // btSeleccionarCliente
             // 
-            this.btSeleccionarCliente.Location = new System.Drawing.Point(12, 21);
+            this.btSeleccionarCliente.Location = new System.Drawing.Point(12, 40);
             this.btSeleccionarCliente.Name = "btSeleccionarCliente";
             this.btSeleccionarCliente.Size = new System.Drawing.Size(120, 23);
             this.btSeleccionarCliente.TabIndex = 3;
@@ -102,7 +104,7 @@
             // lbFechaPedido
             // 
             this.lbFechaPedido.AutoSize = true;
-            this.lbFechaPedido.Location = new System.Drawing.Point(12, 61);
+            this.lbFechaPedido.Location = new System.Drawing.Point(12, 80);
             this.lbFechaPedido.Name = "lbFechaPedido";
             this.lbFechaPedido.Size = new System.Drawing.Size(94, 15);
             this.lbFechaPedido.TabIndex = 4;
@@ -110,7 +112,7 @@
             // 
             // dtpFechaRequerida
             // 
-            this.dtpFechaRequerida.Location = new System.Drawing.Point(138, 90);
+            this.dtpFechaRequerida.Location = new System.Drawing.Point(138, 109);
             this.dtpFechaRequerida.Name = "dtpFechaRequerida";
             this.dtpFechaRequerida.Size = new System.Drawing.Size(200, 23);
             this.dtpFechaRequerida.TabIndex = 5;
@@ -118,7 +120,7 @@
             // 
             // dtpFechaEnvio
             // 
-            this.dtpFechaEnvio.Location = new System.Drawing.Point(138, 124);
+            this.dtpFechaEnvio.Location = new System.Drawing.Point(138, 143);
             this.dtpFechaEnvio.Name = "dtpFechaEnvio";
             this.dtpFechaEnvio.Size = new System.Drawing.Size(200, 23);
             this.dtpFechaEnvio.TabIndex = 6;
@@ -127,7 +129,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 96);
+            this.label1.Location = new System.Drawing.Point(12, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 15);
             this.label1.TabIndex = 7;
@@ -136,7 +138,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 130);
+            this.label2.Location = new System.Drawing.Point(12, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 15);
             this.label2.TabIndex = 8;
@@ -144,7 +146,7 @@
             // 
             // dtpFechaPedido
             // 
-            this.dtpFechaPedido.Location = new System.Drawing.Point(138, 55);
+            this.dtpFechaPedido.Location = new System.Drawing.Point(138, 74);
             this.dtpFechaPedido.Name = "dtpFechaPedido";
             this.dtpFechaPedido.Size = new System.Drawing.Size(200, 23);
             this.dtpFechaPedido.TabIndex = 9;
@@ -298,7 +300,7 @@
             this.groupBox1.Controls.Add(this.tbRegion);
             this.groupBox1.Controls.Add(this.tbCiudad);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Location = new System.Drawing.Point(484, 22);
+            this.groupBox1.Location = new System.Drawing.Point(484, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(768, 152);
             this.groupBox1.TabIndex = 26;
@@ -307,6 +309,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductId,
@@ -315,7 +319,7 @@
             this.Cantidad,
             this.Descuento});
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 220);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 228);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(1240, 390);
@@ -410,9 +414,11 @@
             // 
             this.tbIva.Location = new System.Drawing.Point(161, 93);
             this.tbIva.Name = "tbIva";
+            this.tbIva.ReadOnly = true;
             this.tbIva.Size = new System.Drawing.Size(208, 23);
             this.tbIva.TabIndex = 4;
             this.tbIva.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbIva.Leave += new System.EventHandler(this.tbIva_Leave);
             // 
             // tbTotalSinIva
             // 
@@ -453,9 +459,9 @@
             // btFinalizarPedido
             // 
             this.btFinalizarPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btFinalizarPedido.Location = new System.Drawing.Point(640, 761);
+            this.btFinalizarPedido.Location = new System.Drawing.Point(640, 783);
             this.btFinalizarPedido.Name = "btFinalizarPedido";
-            this.btFinalizarPedido.Size = new System.Drawing.Size(181, 73);
+            this.btFinalizarPedido.Size = new System.Drawing.Size(181, 51);
             this.btFinalizarPedido.TabIndex = 29;
             this.btFinalizarPedido.Text = "Finalizar Pedido";
             this.btFinalizarPedido.UseVisualStyleBackColor = true;
@@ -464,20 +470,20 @@
             // btBorrarPedido
             // 
             this.btBorrarPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btBorrarPedido.Location = new System.Drawing.Point(846, 759);
+            this.btBorrarPedido.Location = new System.Drawing.Point(846, 783);
             this.btBorrarPedido.Name = "btBorrarPedido";
-            this.btBorrarPedido.Size = new System.Drawing.Size(181, 75);
+            this.btBorrarPedido.Size = new System.Drawing.Size(181, 51);
             this.btBorrarPedido.TabIndex = 30;
-            this.btBorrarPedido.Text = "Borrar Pedido";
+            this.btBorrarPedido.Text = "Resetear Pedido";
             this.btBorrarPedido.UseVisualStyleBackColor = true;
             this.btBorrarPedido.Click += new System.EventHandler(this.btBorrarPedido_Click);
             // 
             // btSalir
             // 
             this.btSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btSalir.Location = new System.Drawing.Point(1052, 759);
+            this.btSalir.Location = new System.Drawing.Point(1052, 783);
             this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(181, 73);
+            this.btSalir.Size = new System.Drawing.Size(181, 49);
             this.btSalir.TabIndex = 31;
             this.btSalir.Text = "Salir";
             this.btSalir.UseVisualStyleBackColor = true;
@@ -485,7 +491,7 @@
             // 
             // btAnyadirProducto
             // 
-            this.btAnyadirProducto.Location = new System.Drawing.Point(11, 191);
+            this.btAnyadirProducto.Location = new System.Drawing.Point(12, 199);
             this.btAnyadirProducto.Name = "btAnyadirProducto";
             this.btAnyadirProducto.Size = new System.Drawing.Size(132, 23);
             this.btAnyadirProducto.TabIndex = 32;
@@ -495,7 +501,7 @@
             // 
             // btEliminarProducto
             // 
-            this.btEliminarProducto.Location = new System.Drawing.Point(154, 191);
+            this.btEliminarProducto.Location = new System.Drawing.Point(155, 199);
             this.btEliminarProducto.Name = "btEliminarProducto";
             this.btEliminarProducto.Size = new System.Drawing.Size(132, 23);
             this.btEliminarProducto.TabIndex = 33;
@@ -503,11 +509,33 @@
             this.btEliminarProducto.UseVisualStyleBackColor = true;
             this.btEliminarProducto.Click += new System.EventHandler(this.btEliminarProducto_Click);
             // 
+            // lbTextoPedido
+            // 
+            this.lbTextoPedido.AutoSize = true;
+            this.lbTextoPedido.Location = new System.Drawing.Point(13, 9);
+            this.lbTextoPedido.Name = "lbTextoPedido";
+            this.lbTextoPedido.Size = new System.Drawing.Size(44, 15);
+            this.lbTextoPedido.TabIndex = 34;
+            this.lbTextoPedido.Text = "Pedido";
+            this.lbTextoPedido.Visible = false;
+            // 
+            // lbPedidoId
+            // 
+            this.lbPedidoId.AutoSize = true;
+            this.lbPedidoId.Location = new System.Drawing.Point(63, 9);
+            this.lbPedidoId.Name = "lbPedidoId";
+            this.lbPedidoId.Size = new System.Drawing.Size(54, 15);
+            this.lbPedidoId.TabIndex = 35;
+            this.lbPedidoId.Text = "PedidoId";
+            this.lbPedidoId.Visible = false;
+            // 
             // FormPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 861);
+            this.Controls.Add(this.lbPedidoId);
+            this.Controls.Add(this.lbTextoPedido);
             this.Controls.Add(this.btEliminarProducto);
             this.Controls.Add(this.btAnyadirProducto);
             this.Controls.Add(this.btSalir);
@@ -590,5 +618,7 @@
         private DataGridViewTextBoxColumn Descuento;
         private Button btAnyadirProducto;
         private Button btEliminarProducto;
+        private Label lbTextoPedido;
+        private Label lbPedidoId;
     }
 }

@@ -64,6 +64,8 @@
             // 
             // dataGridViewCategorias
             // 
+            this.dataGridViewCategorias.AllowUserToAddRows = false;
+            this.dataGridViewCategorias.AllowUserToDeleteRows = false;
             this.dataGridViewCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCategorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CategoriaId,
@@ -80,6 +82,7 @@
             // 
             // CategoriaId
             // 
+            this.CategoriaId.FillWeight = 67.3968F;
             this.CategoriaId.HeaderText = "CategoriaId";
             this.CategoriaId.MinimumWidth = 6;
             this.CategoriaId.Name = "CategoriaId";
@@ -88,29 +91,32 @@
             // 
             // Nombre
             // 
+            this.Nombre.FillWeight = 83.1712F;
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 200;
+            this.Nombre.Width = 247;
             // 
             // Descripción
             // 
+            this.Descripción.FillWeight = 192.5754F;
             this.Descripción.HeaderText = "Descripción";
             this.Descripción.MinimumWidth = 6;
             this.Descripción.Name = "Descripción";
             this.Descripción.ReadOnly = true;
-            this.Descripción.Width = 400;
+            this.Descripción.Width = 571;
             // 
             // Imagen
             // 
+            this.Imagen.FillWeight = 56.85658F;
             this.Imagen.HeaderText = "Imagen";
             this.Imagen.MinimumWidth = 6;
             this.Imagen.Name = "Imagen";
             this.Imagen.ReadOnly = true;
             this.Imagen.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Imagen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Imagen.Width = 125;
+            this.Imagen.Width = 169;
             // 
             // label1
             // 
@@ -123,6 +129,8 @@
             // 
             // dataGridViewProductos
             // 
+            this.dataGridViewProductos.AllowUserToAddRows = false;
+            this.dataGridViewProductos.AllowUserToDeleteRows = false;
             this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Categoria,
@@ -138,6 +146,7 @@
             // 
             // Categoria
             // 
+            this.Categoria.FillWeight = 31.59225F;
             this.Categoria.HeaderText = "Categoria";
             this.Categoria.MinimumWidth = 6;
             this.Categoria.Name = "Categoria";
@@ -146,19 +155,21 @@
             // 
             // ProductoId
             // 
+            this.ProductoId.FillWeight = 50.80787F;
             this.ProductoId.HeaderText = "ProductoId";
             this.ProductoId.MinimumWidth = 6;
             this.ProductoId.Name = "ProductoId";
             this.ProductoId.ReadOnly = true;
-            this.ProductoId.Width = 125;
+            this.ProductoId.Width = 201;
             // 
             // NombreProducto
             // 
+            this.NombreProducto.FillWeight = 217.5998F;
             this.NombreProducto.HeaderText = "Nombre Producto";
             this.NombreProducto.MinimumWidth = 6;
             this.NombreProducto.Name = "NombreProducto";
             this.NombreProducto.ReadOnly = true;
-            this.NombreProducto.Width = 400;
+            this.NombreProducto.Width = 861;
             // 
             // label2
             // 

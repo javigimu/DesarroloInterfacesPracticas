@@ -59,12 +59,26 @@ namespace Negocio
             disposed = g.disposed;
         }
 
-        public void ResetearTotales()
+        // Resetea las variables estáticas para los cálculos de los pedidos
+        public static void ResetearTotales()
         {
             TotalSinIva = 0;
-            IVA = 21;
         }
-        
+
+        // Calcular los totales de un pedido
+        public static void CalcularTotalesPedido(List<OrderDetail> listaOrderDetails)
+        {
+            TotalSinIva = 0;
+            foreach (OrderDetail od in listaOrderDetails)
+            {
+                decimal precio = od.UnitPrice;
+                short cantidad = od.Quantity;
+                float descuento = (float)(precio * cantidad) * od.Discount;
+                decimal total = (precio * cantidad) - (decimal)descuento;
+                TotalSinIva += precio * cantidad - (decimal)descuento;
+            }
+        }
+
         public override string ToString()
         {
             string texto = "Empleados: ";

@@ -1,4 +1,5 @@
-﻿using Negocio;
+﻿using Modelos;
+using Negocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,13 @@ namespace Presentacion
 
         private void FormSeleccionUsuario_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = Gestion.ListadoEmpleados();
+            ICollection<Employee>? empleados = Gestion.ListadoEmpleados();
+            foreach (Employee emp in empleados)
+            {
+                dataGridView1.Rows.Add(emp.EmployeeId, emp.FirstName, emp.LastName,
+                    emp.Title, emp.Photo);
+            }
+            //dataGridView1.DataSource = Gestion.ListadoEmpleados();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

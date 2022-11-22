@@ -17,6 +17,7 @@ namespace Presentacion
 {
     /// <summary>
     /// <autor>Javier Gimenez</autor>
+    /// Formulario de gestión de los empleados
     /// </summary>
     public partial class FormEmpleados : Form
     {
@@ -60,6 +61,9 @@ namespace Presentacion
             InicializarBooleanos();
         }
 
+        /// <summary>
+        /// Inicialización de las variables booleanas necesarias para las validaciones
+        /// </summary>
         private void InicializarBooleanos()
         {
             primeraActivacionForm = true;
@@ -88,6 +92,13 @@ namespace Presentacion
             fotoNuevoEmpleado = null;
         }
 
+        /// <summary>
+        /// Al cargar el formulario se configuran los DateTimePicker para que permita que estén vacíos
+        /// Configura los datos iniciales según si es una inserción o modificación
+        /// Rellena los campos del empleado en caso de modificación
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormEmpleados_Load(object sender, EventArgs e)
         {
             ConfigurarFormatoFechasInicial();
@@ -113,6 +124,10 @@ namespace Presentacion
             }            
         }
 
+        /// <summary>
+        /// Rellena los campos a partir del empleado
+        /// </summary>
+        /// <param name="emp"></param>
         private void RellenarCampos(Employee emp)
         {
             nombreValidado = true;
@@ -134,7 +149,8 @@ namespace Presentacion
             mtbTelefono.Text = emp.HomePhone;
             tbExtension.Text = emp.Extension;
         
-            
+            // En caso de ser una foto que se ha bajado de la base de datos
+            // la creo físicamente en la carpeta fotos para poder gestionarla
             if (emp.Photo != null)
             {
                 string nombreFichero = "fotos/empleado" + emp.EmployeeId + ".jpg";

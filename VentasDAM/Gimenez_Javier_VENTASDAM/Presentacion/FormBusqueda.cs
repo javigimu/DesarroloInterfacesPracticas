@@ -15,6 +15,7 @@ namespace Presentacion
 {
     /// <summary>
     /// <autor>Javier Giménez</autor>
+    /// Formulario para buscar un empleado
     /// </summary>
     public partial class FormBusqueda : Form
     {
@@ -35,6 +36,10 @@ namespace Presentacion
             return empleado;
         }
 
+        /// <summary>
+        /// Filtra los empleados por nombre, apellido o Id de Empleado
+        /// o muestra todos los empleados si no se establece un filtro
+        /// </summary>
         private void FiltrarEmpleados()
         {
             if (tablaEmpleados != null)
@@ -75,6 +80,9 @@ namespace Presentacion
             FiltrarEmpleados();
         }
 
+        /// <summary>
+        /// Crea un DataTable y sus columnas para mostrar los empleados
+        /// </summary>
         private void CrearColumnasEmpleado()
         {
             empleados = Gestion.ListadoEmpleados();
@@ -123,7 +131,6 @@ namespace Presentacion
                 DialogResult respuesta = Mensaje.ConfirmarSeleccion(empleado, aviso);
                 if (respuesta == DialogResult.OK)
                 {                    
-                    //Mensaje.MostrarProcesoFinalizadoCorrectamente("empelado", "borrado");
                     Owner.Show();
                     Close();
                 }

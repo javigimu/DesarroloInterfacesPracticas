@@ -32,11 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
-            this.btAnyadir = new System.Windows.Forms.Button();
-            this.btCancelar = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.añadirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelarYSalirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btAnyadir = new System.Windows.Forms.Button();
+            this.btCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,8 @@
             // 
             // dataGridViewProductos
             // 
+            this.dataGridViewProductos.AllowUserToAddRows = false;
+            this.dataGridViewProductos.AllowUserToDeleteRows = false;
             this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProductos.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridViewProductos.Location = new System.Drawing.Point(20, 45);
@@ -68,26 +70,6 @@
             this.dataGridViewProductos.Size = new System.Drawing.Size(752, 459);
             this.dataGridViewProductos.TabIndex = 2;
             this.dataGridViewProductos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProductos_CellDoubleClick);
-            // 
-            // btAnyadir
-            // 
-            this.btAnyadir.Location = new System.Drawing.Point(472, 510);
-            this.btAnyadir.Name = "btAnyadir";
-            this.btAnyadir.Size = new System.Drawing.Size(147, 37);
-            this.btAnyadir.TabIndex = 3;
-            this.btAnyadir.Text = "Añadir Producto";
-            this.btAnyadir.UseVisualStyleBackColor = true;
-            this.btAnyadir.Click += new System.EventHandler(this.btAnyadir_Click);
-            // 
-            // btCancelar
-            // 
-            this.btCancelar.Location = new System.Drawing.Point(625, 510);
-            this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(147, 37);
-            this.btCancelar.TabIndex = 4;
-            this.btCancelar.Text = "Cancelar y Salir";
-            this.btCancelar.UseVisualStyleBackColor = true;
-            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // contextMenuStrip1
             // 
@@ -110,6 +92,26 @@
             this.cancelarYSalirToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.cancelarYSalirToolStripMenuItem.Text = "Cancelar y Salir";
             this.cancelarYSalirToolStripMenuItem.Click += new System.EventHandler(this.cancelarYSalirToolStripMenuItem_Click);
+            // 
+            // btAnyadir
+            // 
+            this.btAnyadir.Location = new System.Drawing.Point(472, 510);
+            this.btAnyadir.Name = "btAnyadir";
+            this.btAnyadir.Size = new System.Drawing.Size(147, 37);
+            this.btAnyadir.TabIndex = 3;
+            this.btAnyadir.Text = "Añadir Producto";
+            this.btAnyadir.UseVisualStyleBackColor = true;
+            this.btAnyadir.Click += new System.EventHandler(this.btAnyadir_Click);
+            // 
+            // btCancelar
+            // 
+            this.btCancelar.Location = new System.Drawing.Point(625, 510);
+            this.btCancelar.Name = "btCancelar";
+            this.btCancelar.Size = new System.Drawing.Size(147, 37);
+            this.btCancelar.TabIndex = 4;
+            this.btCancelar.Text = "Cancelar y Salir";
+            this.btCancelar.UseVisualStyleBackColor = true;
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // FormBusquedaProducto
             // 

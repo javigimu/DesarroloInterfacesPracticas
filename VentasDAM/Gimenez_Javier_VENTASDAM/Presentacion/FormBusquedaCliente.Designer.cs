@@ -55,6 +55,8 @@
             // 
             // dataGridViewBuscar
             // 
+            this.dataGridViewBuscar.AllowUserToAddRows = false;
+            this.dataGridViewBuscar.AllowUserToDeleteRows = false;
             this.dataGridViewBuscar.Location = new System.Drawing.Point(39, 51);
             this.dataGridViewBuscar.Name = "dataGridViewBuscar";
             this.dataGridViewBuscar.RowHeadersWidth = 21;

@@ -135,14 +135,14 @@
             // tsmPedidoNuevo
             // 
             this.tsmPedidoNuevo.Name = "tsmPedidoNuevo";
-            this.tsmPedidoNuevo.Size = new System.Drawing.Size(180, 22);
+            this.tsmPedidoNuevo.Size = new System.Drawing.Size(125, 22);
             this.tsmPedidoNuevo.Text = "Nuevo";
             this.tsmPedidoNuevo.Click += new System.EventHandler(this.tsmPedidoNuevo_Click);
             // 
             // tsmPedidoModificar
             // 
             this.tsmPedidoModificar.Name = "tsmPedidoModificar";
-            this.tsmPedidoModificar.Size = new System.Drawing.Size(180, 22);
+            this.tsmPedidoModificar.Size = new System.Drawing.Size(125, 22);
             this.tsmPedidoModificar.Text = "Modificar";
             this.tsmPedidoModificar.Click += new System.EventHandler(this.tsmPedidoModificar_Click);
             // 
@@ -160,12 +160,14 @@
             this.totalPedidosToolStripMenuItem.Name = "totalPedidosToolStripMenuItem";
             this.totalPedidosToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.totalPedidosToolStripMenuItem.Text = "Total Pedidos por cliente";
+            this.totalPedidosToolStripMenuItem.Click += new System.EventHandler(this.totalPedidosToolStripMenuItem_Click);
             // 
             // productosPorCategoríaToolStripMenuItem
             // 
             this.productosPorCategoríaToolStripMenuItem.Name = "productosPorCategoríaToolStripMenuItem";
             this.productosPorCategoríaToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.productosPorCategoríaToolStripMenuItem.Text = "Productos por categoría";
+            this.productosPorCategoríaToolStripMenuItem.Click += new System.EventHandler(this.productosPorCategoríaToolStripMenuItem_Click);
             // 
             // informesToolStripMenuItem
             // 
@@ -178,14 +180,16 @@
             // facturaToolStripMenuItem
             // 
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.facturaToolStripMenuItem.Text = "Factura";
+            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de ...";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -260,7 +264,7 @@
             this.tsbImprimirFactura.Size = new System.Drawing.Size(24, 24);
             this.tsbImprimirFactura.Text = "toolStripButton3";
             this.tsbImprimirFactura.ToolTipText = "Imprimir Factura";
-            this.tsbImprimirFactura.Click += new System.EventHandler(this.tsbImprimirFactura_Click);
+            this.tsbImprimirFactura.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // lbNombreEmpleado
             // 

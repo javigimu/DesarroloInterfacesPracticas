@@ -44,6 +44,7 @@ namespace Presentacion
             {
                 tbIdEmpleado.Text = "";
                 Mensaje.MostrarErrorDeValidacion("Id de empleado incorrecto");
+                tbIdEmpleado.Focus();
             }
         }
 
