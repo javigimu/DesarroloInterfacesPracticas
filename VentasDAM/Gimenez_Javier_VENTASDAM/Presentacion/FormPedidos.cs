@@ -378,11 +378,35 @@ namespace Presentacion
             Product? producto = formBuscarProducto?.GetProducto();
             if (producto != null)
             {
-                productos?.Add(producto);
-                dataGridView1.Rows.Add(producto.ProductId, producto.ProductName, producto.UnitPrice, 1, 0);
+                if (ComprobarProductoYaAnyadido(producto))
+                {
+                    Mensaje.MostrarErrorGenerico("El producto ya está añadido");
+                }
+                else
+                {
+                    productos?.Add(producto);
+                    dataGridView1.Rows.Add(producto.ProductId, producto.ProductName, producto.UnitPrice, 1, 0);
+                }
             }
             CalcularTotales();
         }
+
+        private bool ComprobarProductoYaAnyadido(Product producto)
+        {
+            bool productoYaAnyadido = false;
+            if (productos != null)
+            {
+                foreach (Product p in productos)
+                {
+                    if (p.ProductId == producto.ProductId)
+                    {
+                        productoYaAnyadido = true;
+                    }
+                }
+            }
+            return productoYaAnyadido;
+        }
+
 
         private void EliminarProducto()
         {
