@@ -22,3 +22,5 @@ C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\E
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\refint\Modelos.dll
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.pdb
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\ref\Modelos.dll
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\bin\Debug\net6.0\Modelos.xml
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Entidades\obj\Debug\net6.0\Modelos.xml

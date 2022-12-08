@@ -32,3 +32,6 @@ C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\D
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\DatosEEF\obj\Debug\net6.0\DatosEEF.pdb
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\DatosEEF\obj\Debug\net6.0\DatosEEF.genruntimeconfig.cache
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\DatosEEF\obj\Debug\net6.0\ref\DatosEEF.dll
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\DatosEEF\bin\Debug\net6.0\DatosEEF.xml
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\DatosEEF\bin\Debug\net6.0\Modelos.xml
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\DatosEEF\obj\Debug\net6.0\DatosEEF.xml

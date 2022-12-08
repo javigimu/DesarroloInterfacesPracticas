@@ -32,3 +32,5 @@ C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\N
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Negocio\obj\Debug\net6.0\refint\Negocio.dll
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Negocio\obj\Debug\net6.0\Negocio.pdb
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Negocio\obj\Debug\net6.0\ref\Negocio.dll
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Negocio\bin\Debug\net6.0\DatosEEF.xml
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Negocio\bin\Debug\net6.0\Modelos.xml

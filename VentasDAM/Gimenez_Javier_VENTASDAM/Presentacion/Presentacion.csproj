@@ -9,6 +9,7 @@
     <Title>VentasDAM</Title>
     <Copyright>@2022 VentasDAM</Copyright>
     <Description>Aplicación de gestión de empleados, clientes, pedidos y ventas</Description>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

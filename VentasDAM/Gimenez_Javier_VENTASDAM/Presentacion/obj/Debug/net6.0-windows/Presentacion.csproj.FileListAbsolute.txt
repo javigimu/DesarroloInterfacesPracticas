@@ -209,3 +209,7 @@ C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\P
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Presentacion\bin\Debug\net6.0-windows\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Presentacion\obj\Debug\net6.0-windows\Presentacion.FormFactura.resources
 C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Presentacion\bin\Debug\net6.0-windows\ReportFactura.rdlc
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Presentacion\bin\Debug\net6.0-windows\Presentacion.xml
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Presentacion\obj\Debug\net6.0-windows\Presentacion.xml
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Presentacion\bin\Debug\net6.0-windows\Modelos.xml
+C:\DAM\2\Desarrollo de Interfaces\Practicas\VentasDAM\Gimenez_Javier_VENTASDAM\Presentacion\bin\Debug\net6.0-windows\DatosEEF.xml

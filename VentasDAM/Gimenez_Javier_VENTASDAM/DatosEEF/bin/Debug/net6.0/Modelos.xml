@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Modelos</name>
+    </assembly>
+    <members>
+        <member name="T:Modelos.Category">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="T:Modelos.Customer">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="T:Modelos.Employee">
+            <summary>
+            Clase Employee.
+            Version 1.0
+            <autor>Javier Giménez</autor> 
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.EmployeeId">
+            <summary>
+            Clave primaria del empleado.
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.LastName">
+            <summary>
+            Apellido del empleado con longitud máxima de 20 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.FirstName">
+            <summary>
+            Nombre del empleado con longitud máxima de 10 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.Title">
+            <summary>
+            Cargo del empleado con longitud máxima de 30 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.TitleOfCourtesy">
+            <summary>
+            Título de cortesía con longitud máxima de 25 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.BirthDate">
+            <summary>
+            Fecha de nacimiento del empleado
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.HireDate">
+            <summary>
+            Fecha de contratación del empleado
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.Address">
+            <summary>
+            Dirección de residencia del empleado con longitud máxima de 60 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.City">
+            <summary>
+            Ciudad de residencia del empleado con longitud máxima de 15 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.Region">
+            <summary>
+            Provincia de residencia del empleado con longitud máxima de 15 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.PostalCode">
+            <summary>
+            Código postal de residencia del empleado con longitud máxima de 10 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.Country">
+            <summary>
+            País de residencia del empleado con longitud máxima de 15 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.HomePhone">
+            <summary>
+            Teléfono personal del empleado con longitud máxima de 24 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.Extension">
+            <summary>
+            Extensión para el teléfono del empleado con longitud máxima de 4 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.Photo">
+            <summary>
+            Foto personal para identificar al empleado
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.Notes">
+            <summary>
+            Información adicional del empleado
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.ReportsTo">
+            <summary>
+            Identificador del empleado supervisor
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.PhotoPath">
+            <summary>
+            Ruta de acceso a la foto del empleado con longitud máxima de 255 caracteres
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.ReportsToNavigation">
+            <summary>
+            Clave ajena a Employees para enlazar los reportes al supervisor
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.InverseReportsToNavigation">
+            <summary>
+            Propiedad inversa para gestionar los reportes al supervisor
+            </summary>
+        </member>
+        <member name="P:Modelos.Employee.Orders">
+            <summary>
+            Colección con los pedidos realizados por el empleado
+            </summary>
+        </member>
+        <member name="M:Modelos.Employee.#ctor">
+            <summary>
+            Constructor por defecto
+            </summary>
+        </member>
+        <member name="M:Modelos.Employee.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Byte[],System.String,System.String,System.Int32)">
+            <summary>
+            Constructor con todos los parámetros
+            </summary>
+            <param name="employeeId">Id de empleado</param>
+            <param name="lastName">Apellido del empleado</param>
+            <param name="firstName">Nombre del empleado</param>
+            <param name="title">Cargo del empleado</param>
+            <param name="titleOfCourtesy">Título de cortesía (Mr., Ms., Dr. Mrs.)</param>
+            <param name="birthDate">Año de nacimiento del empleado</param>
+            <param name="hireDate">Año de contratación del empleado</param>
+            <param name="address">Dirección del empleado</param>
+            <param name="city">Ciudad de residencia del empleado</param>
+            <param name="region">Provincia de residencia del empleado</param>
+            <param name="postalCode">Código postal de residencia del empleado</param>
+            <param name="country">País de residencia del empleado</param>
+            <param name="homePhone">Télefono personal del empleado</param>
+            <param name="extension">Extensión del teléfono del empleado</param>
+            <param name="photo">Foto identificación del empleado</param>
+            <param name="notes">Información adicional del empleado</param>
+            <param name="photoPath">Ruta de acceso a la foto del empleado</param>
+            <param name="reportsTo">Empleado supervisor del empleado</param>
+        </member>
+        <member name="M:Modelos.Employee.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            Constructor con los parámetros obligatorios
+            </summary>
+            <param name="employeeId">Código de identificación del empleado</param>
+            <param name="lastName">Apellido del empleado</param>
+            <param name="firstName">Nombre del empleado</param>
+        </member>
+        <member name="M:Modelos.Employee.#ctor(Modelos.Employee)">
+            <summary>
+            Constructor de copia
+            </summary>
+            <param name="e">Empleado del que se realiza la copia</param>
+        </member>
+        <member name="M:Modelos.Employee.CompareTo(Modelos.Employee)">
+            <summary>
+            Método de comparación.
+            La interfaz IComparable exige la implementación de un método CompareTo.
+            Se realiza la ordenación por Firstname y después por Lastname
+            </summary>
+            <param name="otro">Segundo empleado para realizar la comparación</param>
+            <returns>-1 si el empleado actual es menor que el recibido por parámetro, 
+            0 si los dos empleados son iguales o 1 si el empleado actual es mayor que el recibido por parámetro</returns>
+        </member>
+        <member name="M:Modelos.Employee.ToString">
+            <summary>
+            Sobrecarga del método ToString.
+            </summary>
+            <returns>Una cadena de texto con todos los datos del empleado separados por #</returns>
+        </member>
+        <member name="M:Modelos.Employee.Finalize">
+            <summary>
+            Destructor
+            </summary>
+        </member>
+        <member name="T:Modelos.Order">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="T:Modelos.OrderDetail">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="T:Modelos.Shipper">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="T:Modelos.Supplier">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+    </members>
+</doc>

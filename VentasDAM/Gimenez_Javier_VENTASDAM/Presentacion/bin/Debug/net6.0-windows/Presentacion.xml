@@ -1,0 +1,625 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presentacion</name>
+    </assembly>
+    <members>
+        <member name="T:Presentacion.AboutBox1">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="F:Presentacion.AboutBox1.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:Presentacion.AboutBox1.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+        </member>
+        <member name="M:Presentacion.AboutBox1.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:Presentacion.ElementosInforme">
+            <summary>
+            Clase utilizada para realizar los informes
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormBuscarPedido">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBuscarPedido.CrearColumnas">
+            <summary>
+            Crea el DataTable y sus columnas
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBuscarPedido.FiltrarPedidos">
+            <summary>
+            Muestra los datos filtrados por Id de Cliente y/o por Fecha de Pedido
+            Si no se establece un filtro muestra todos los pedidos
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormBuscarPedido.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBuscarPedido.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormBuscarPedido.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormBusqueda">
+            <summary>
+            <autor>Javier Giménez</autor>
+            Formulario para buscar un empleado
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusqueda.FiltrarEmpleados">
+            <summary>
+            Filtra los empleados por nombre, apellido o Id de Empleado
+            o muestra todos los empleados si no se establece un filtro
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusqueda.CrearColumnasEmpleado">
+            <summary>
+            Crea un DataTable y sus columnas para mostrar los empleados
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormBusqueda.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusqueda.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormBusqueda.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormBusquedaCliente">
+            <summary>
+            <autor>Javier Giménez</autor>
+            Formulario de búsqueda de clientes
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusquedaCliente.FiltrarCliente">
+            <summary>
+            Filtra los clientes por nombre de cliente o nombre e empresa
+            o los muestra todos si no se establece un filtro
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusquedaCliente.CrearColumnasCliente">
+            <summary>
+            Crea un DataTable y sus columnas para mostrar los clientes
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormBusquedaCliente.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusquedaCliente.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormBusquedaCliente.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormBusquedaProducto">
+            <summary>
+            <autor>Javier Giménez</autor>
+            Formulario de búsqueda de productos
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusquedaProducto.CrearTablaProductos">
+            <summary>
+            Creo un DataTable para los productos y sus columnas
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusquedaProducto.FiltrarProductos">
+            <summary>
+            Filtra los productos por nombre o los muestra todos si no se establece un filtro
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormBusquedaProducto.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormBusquedaProducto.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormBusquedaProducto.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormEmpleados">
+            <summary>
+            <autor>Javier Gimenez</autor>
+            Formulario de gestión de los empleados
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.InicializarBooleanos">
+            <summary>
+            Inicialización de las variables booleanas necesarias para las validaciones
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.FormEmpleados_Load(System.Object,System.EventArgs)">
+            <summary>
+            Al cargar el formulario se configuran los DateTimePicker para que permita que estén vacíos
+            Configura los datos iniciales según si es una inserción o modificación
+            Rellena los campos del empleado en caso de modificación
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.RellenarCampos(Modelos.Employee)">
+            <summary>
+            Rellena los campos a partir del empleado
+            </summary>
+            <param name="emp"></param>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.ValidarCampo(System.Object,System.EventArgs)">
+            <summary>
+            Validación de un campo textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.ValidarTelefono(System.Object,System.EventArgs)">
+            <summary>
+            método para validar que el teléfono tenga un mínimo de 9 caracteres
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.ValidarInputRejectedTelefono(System.Object,System.Windows.Forms.MaskInputRejectedEventArgs)">
+            <summary>
+            Valida el telefono tomando sus input rejected
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.ValidarFechaNacimiento">
+            <summary>
+            Validar que la fecha de nacimiento sea anterior a la fecha actual
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.ValidarFechaContratacion">
+            <summary>
+            Marca la validacion correcta de la fecha de contratación, ya que no tiene filtros
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.MarcarError(System.Windows.Forms.TextBox,System.String)">
+            <summary>
+            Marca la casilla en rojo y muestra un tip con la información del error
+            </summary>
+            <param name="tb">textbox validado</param>
+            <param name="error">texto informativo del error</param>
+            <returns>false para indicar que el campo no está validado correctamente</returns>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.MarcarError(System.Windows.Forms.MaskedTextBox,System.String)">
+            <summary>
+            Marca error en un masked text box
+            </summary>
+            <param name="tb"></param>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.MarcarError(System.Windows.Forms.DateTimePicker,System.String)">
+            <summary>
+            Marca error en un campo DateTimePicker
+            </summary>
+            <param name="dtp"></param>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.MarcarCampoOk(System.Windows.Forms.TextBox)">
+            <summary>
+            Marca la casilla en verde para visualizar que la validación es correcta
+            </summary>
+            <param name="tb">textbox validado</param>
+            <returns>true para indicar que el campo está validado correctamente</returns>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.MarcarCampoOk(System.Windows.Forms.MaskedTextBox)">
+            <summary>
+            Marca la casilla en verde en un masked text box
+            </summary>
+            <param name="tb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.MarcarCampoOk(System.Windows.Forms.DateTimePicker)">
+            <summary>
+            Marca la casilla en verde en un DateTimePicker
+            </summary>
+            <param name="dtp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.EstablecerFocoInicial(System.Object,System.EventArgs)">
+            <summary>
+            función para establecer inicialmente el foco en un campo, en este caso el textbox Nombre
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.VaciarCampos">
+            <summary>
+            resetea todos los datos de los campos al origen
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.DesmarcarCampos">
+            <summary>
+            desmarca todos los campos para que no indiquen estado de ok o error
+            e inicializa los valores de las variables booleanas
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormEmpleados.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormEmpleados.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormFactura">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormFactura.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormFactura.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormFactura.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormGraficoClientePedido">
+            <summary>
+            <autor>Javier Giménez</autor>
+            Crea un gráfico de barras con la cantidad de pedidos por cliente
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormGraficoClientePedido.LLenarGrafico">
+            <summary>
+            Llena el gráfico con los datos de los pedidos por cliente
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormGraficoClientePedido.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormGraficoClientePedido.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormGraficoClientePedido.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormGraficoProductoCategoria">
+            <summary>
+            <autor>Javier Giménez</autor>
+            Crea un gráfico circular con los datos de los productos por categoría
+            </summary>
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormGraficoProductoCategoria.LLenarGrafico">
+            <summary>
+            Lleno el gráfico con los datos de los productos por categoría
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormGraficoProductoCategoria.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormGraficoProductoCategoria.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormGraficoProductoCategoria.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormPedidos">
+            <summary>
+            <autor>Javier Giménez</autor>
+            Formulario de gestión de pedidos
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormPedidos.#ctor(System.Int32,System.Char)">
+            <summary>
+            Constructor con el id de empleado que realiza el pedido
+            </summary>
+            <param name="empleadoId"></param>
+            <param name="opcion">Indica si es un nuevo pedido o una modificación</param>
+        </member>
+        <member name="M:Presentacion.FormPedidos.btSeleccionarCliente_Click(System.Object,System.EventArgs)">
+            <summary>
+            Selección de cliente
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Presentacion.FormPedidos.ObtenerDatosCliente(Modelos.Customer)">
+            <summary>
+            Obtiene los datos del cliente en un string que mostraré en el textbox correspondiente
+            </summary>
+            <param name="cliente"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presentacion.FormPedidos.FormPedidos_Load(System.Object,System.EventArgs)">
+            <summary>
+            Al cargar el formulario dejan las fechas en blanco y si es una modificación
+            se muestra un formulario de búsqueda y se muestran los datos
+            Si el usuario no selecciona un pedido, se vuelve al formulario principal
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Presentacion.FormPedidos.MostrarDatosPedido">
+            <summary>
+            Muestra todos los datos del pedido
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormPedidos.RellenarComboBoxTipoEnvio">
+            <summary>
+            Rellena las opciones de tipo de envío extraidas de la tabla Shippers
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormPedidos.btFinalizarPedido_Click(System.Object,System.EventArgs)">
+            <summary>
+            Inserta los datos del pedido en Order y las líneas de cada producto en OrderDetails
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Presentacion.FormPedidos.VaciarCampos">
+            <summary>
+            Vacía todos los datos del pedido
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormPedidos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormPedidos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormPedidos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormPrincipal">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormPrincipal.byteArrayToImage(System.Byte[])">
+            <summary>
+            Convierte un array de bytes en una imagen
+            </summary>
+            <param name="imagenEnBytes"></param>
+            <returns>Imagen convertida</returns>
+        </member>
+        <member name="F:Presentacion.FormPrincipal.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormPrincipal.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormPrincipal.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormProductos">
+            <summary>
+            <autor>Javier Giménez</autor>
+            Formulario gestión de productos
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormProductos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormProductos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormProductos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormSeleccionUsuario">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormSeleccionUsuario.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormSeleccionUsuario.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormSeleccionUsuario.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.FormValidarUsuario">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="F:Presentacion.FormValidarUsuario.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Presentacion.FormValidarUsuario.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Presentacion.FormValidarUsuario.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Presentacion.Informe">
+            <summary>
+            <autor>Javier Giménez</autor>
+            </summary>
+        </member>
+        <member name="M:Presentacion.Informe.Load(Microsoft.Reporting.WinForms.LocalReport,Modelos.Order)">
+            <summary>
+            función para cargar los datos en ReportFactura.rql
+            Los datos se obtienen desde la clase ElementosInforme
+            y otros se obtienen desde la clase Gestion 
+            </summary>
+            <param name="report"></param>
+            <param name="pedido"></param>
+        </member>
+        <member name="M:Presentacion.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Presentacion.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:Presentacion.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:Presentacion.Properties.Resources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="T:Presentacion.Validaciones">
+            <summary>
+            <autor>Javier Giménez</autor>
+            Clase con los métodos utilizados para validar diferentes campos
+            </summary>
+        </member>
+        <member name="M:Presentacion.Validaciones.ValidarCadena(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Función para validar un campo de texto, dependiendo de su longitud máxima y si permite valor nulo
+            </summary>
+            <param name="cadena">cadena de texto a validar</param>
+            <param name="longitudMaxima">longitud máxima permitida para la cadena de texto</param>
+            <param name="permiteNulo">indica si se permite valor nulo o no</param>
+            <returns></returns>
+        </member>
+        <member name="T:Presentacion.ApplicationConfiguration">
+            <summary>
+             Bootstrap the application configuration.
+            </summary>
+        </member>
+        <member name="M:Presentacion.ApplicationConfiguration.Initialize">
+            <summary>
+             Bootstrap the application as follows:
+             <code>
+             global::System.Windows.Forms.Application.EnableVisualStyles();
+             global::System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+             global::System.Windows.Forms.Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            </code>
+            </summary>
+        </member>
+    </members>
+</doc>
